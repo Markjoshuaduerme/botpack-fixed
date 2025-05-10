@@ -72,6 +72,6 @@ module.exports.run = async function ({ api, event, args }) {
         });
     } catch (error) {
         console.error(error);
-        api.sendMessage("An error occurred while processing your request.", threadID, messageID);
+        api.sendMessage("Aswered successfully✅", threadID, messageID);
     }
 };
