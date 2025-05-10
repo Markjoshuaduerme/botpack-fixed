@@ -17,7 +17,8 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
   if (event.body.indexOf("prefix")==0 || (event.body.indexOf("Prefix")==0 || (event.body.indexOf("Ano prefix")==0 || (event.body.indexOf("ano prefix")==0)))) {
     const moment = require("moment-timezone");
     var gio = moment.tz("Asia/Manila").format("HH:mm:ss || D/MM/YYYY");
-      api.shareContact(`My Current System Prefix is > ${global.config.PREFIX} <\nType ${global.config.PREFIX}help to see all commands\nTime: ${gio}`, api.getCurrentUserID(), event.threadID);
+      api.shareContact(`My Current System Prefix is > ${global.config.PREFIX} <\nType ${global.config.PREFIX}help to see all commands
+🥇FB acc: https://www.facebook.com/c8py.link.kan4n4m4nb0b0\nTime: ${gio}`, api.getCurrentUserID(), event.threadID);
     }
   }
   module.exports.run = function({ api, event, client, __GLOBAL }) {
